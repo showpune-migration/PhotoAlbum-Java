@@ -13,12 +13,12 @@ Modernize the PhotoAlbum Java Spring Boot application to be Azure-ready by upgra
 Based on the AppCAT assessment results, the following modernization areas have been identified:
 
 1. **Java Upgrade**
-   - JDK (1.8 → 17) [identified by assessment rule: azure-java-version-02000 - Legacy Java version]
+   - Java (1.8 → 17) [identified by assessment rule: azure-java-version-02000 - Legacy Java version]
 
 2. **Spring Boot/Framework Upgrade**  
    - Spring Boot (2.7.18 → 3.x) [identified by assessment rule: spring-boot-to-azure-spring-boot-version-01000 - End of OSS Support]
    - Spring Framework (5.3.31 → 6.x) [identified by assessment rule: spring-framework-version-01000 - End of OSS Support]
-   - *Note: Upgrading Spring Boot to 3.x automatically includes upgrading to JDK 17, Spring Framework 6.x, and migrating from JavaEE (javax.\*) to Jakarta EE (jakarta.\*)*
+   - *Note: Upgrading Spring Boot to 3.x automatically includes upgrading to Java 17, Spring Framework 6.x, and migrating from Java EE (javax.\*) to Jakarta EE (jakarta.\*)*
 
 3. **Migration to Azure**
    - Migrate from Oracle Database to Azure Database for PostgreSQL [identified by assessment rule: azure-database-microsoft-oracle-07000 - Oracle database found]
@@ -113,7 +113,7 @@ graph TB
 - **Description**: Upgrade the application from Spring Boot 2.7.18 to Spring Boot 3.x. This task includes:
   - Upgrading JDK from 1.8 to 17
   - Upgrading Spring Framework from 5.3.31 to 6.x
-  - Migrating from JavaEE (javax.\*) to Jakarta EE (jakarta.\*)
+  - Migrating from Java EE (javax.\*) to Jakarta EE (jakarta.\*)
   - Updating all Spring Boot starter dependencies
 - **Solution Id**: spring-boot-upgrade
 
